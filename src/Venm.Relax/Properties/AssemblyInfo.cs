@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Venm.Relax")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("osu! Relax bot")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Afex Labs")]
 [assembly: AssemblyProduct("Venm.Relax")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright © Shynd 2016")]
+[assembly: AssemblyTrademark("Afex Labs")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

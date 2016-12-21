@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{903F693B-302C-4A02-AA0C-C90EAF80B98B}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Venm.Relax</RootNamespace>
     <AssemblyName>Venm.Relax</AssemblyName>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,14 +49,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beatmap\BMParser.cs" />
+    <Compile Include="Beatmap\HitObject.cs" />
+    <Compile Include="Beatmap\TimingPoint.cs" />
+    <Compile Include="BlackMagic\BMInject.cs" />
+    <Compile Include="BlackMagic\BMMain.cs" />
+    <Compile Include="BlackMagic\BMMemory.cs" />
+    <Compile Include="BlackMagic\BMPattern.cs" />
+    <Compile Include="BlackMagic\BMThread.cs" />
+    <Compile Include="BlackMagic\Static Classes\SInject.cs" />
+    <Compile Include="BlackMagic\Static Classes\SMemory.cs" />
+    <Compile Include="BlackMagic\Static Classes\SPattern.cs" />
+    <Compile Include="BlackMagic\Static Classes\SProcess.cs" />
+    <Compile Include="BlackMagic\Static Classes\SThread.cs" />
+    <Compile Include="BlackMagic\Static Classes\SWindow.cs" />
+    <Compile Include="BlackMagic\Static Classes\Win32Imports.cs" />
+    <Compile Include="Core\OsuManager.cs" />
     <Compile Include="Forms\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Native\InputSender.cs" />
+    <Compile Include="Native\KeyboardHook.cs" />
+    <Compile Include="Native\Win32.cs" />
+    <Compile Include="Patchables\Offsets.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
