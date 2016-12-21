@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5CA5B7A3-22E5-493D-AF1E-30FBD2E63F9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4B8D1189-8810-46F2-A88D-271B16EB2276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Venm.Relax", "src\Venm.Relax\Venm.Relax.csproj", "{903F693B-302C-4A02-AA0C-C90EAF80B98B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{903F693B-302C-4A02-AA0C-C90EAF80B98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903F693B-302C-4A02-AA0C-C90EAF80B98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903F693B-302C-4A02-AA0C-C90EAF80B98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903F693B-302C-4A02-AA0C-C90EAF80B98B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{903F693B-302C-4A02-AA0C-C90EAF80B98B} = {5CA5B7A3-22E5-493D-AF1E-30FBD2E63F9D}
+	EndGlobalSection
+EndGlobal
